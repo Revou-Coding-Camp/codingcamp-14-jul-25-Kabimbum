@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-3gPqFfD3xqZfNLwZKkWRA6/4QqhnMgHH5M4Xc6r5jHwIP+dmyg8T2Wgh1tq2WbiKUtWm8El1bYmjOP9ScUNFzQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#393e46",
+          },
+        },
+      },
+    };
+  </script>
+</head>
+
+<body class="bg-white text-primary">
+
+  <header class="fixed w-full bg-white shadow z-20">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <img src="/assets/AN.png" alt="assets/AN.png" class="h-16" />
+      <nav class="space-x-4 font-medium">
+        <a href="#home" class="hover:text-blue-500 transition">Home</a>
+        <a href="#about" class="hover:text-blue-500 transition">About</a>
+        <a href="#portfolio" class="hover:text-blue-500 transition">Portfolio</a>
+        <a href="#contact" class="hover:text-blue-500 transition">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="home" class="h-screen relative overflow-hidden bg-white flex items-center justify-center">
+
+    <img src="/assets/backgrund-hero.png" alt="Background"
+      class="absolute inset-0 w-full h-full object-cover blur-md opacity-50 z-0" />
+
+    <div class="relative z-10 text-center animate-fade-in-up">
+      <h1 class="text-5xl font-bold mb-4 text-primary">Hi, I'm Gibran 👋</h1>
+      <p class="text-lg mb-6 text-gray-700">
+        A multidisciplinary creative focused on visual design and website development — crafting seamless digital
+        experiences that blend aesthetics with purpose.
+      </p>
+      <a href="#portfolio" class="px-6 py-3 bg-primary text-white rounded-lg hover:bg-blue-600 transition">
+        See My Work
+      </a>
+    </div>
+  </section>
+
+  <section id="about" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4 max-w-4xl text-center">
+      <h2 class="text-3xl font-bold text-primary mb-6">About Me</h2>
+      <p class="text-gray-700 text-lg leading-relaxed mb-6">
+        I'm <strong>Muhammad Gibran Hakim</strong>, a creative developer and multimedia enthusiast based in Tangerang,
+        Indonesia. With over <strong>2 years of multidisciplinary experience</strong>, I specialize in blending software
+        engineering with design sensibility — crafting interactive user interfaces, intuitive prototypes, and scalable
+        digital solutions.
+      </p>
+      <p class="text-gray-700 text-lg leading-relaxed mb-6">
+        My journey began in <strong>visual storytelling</strong> through graphic design and videography. Over time, it
+        evolved into full-stack web development and UI/UX design, where I found the perfect synergy between logic and
+        aesthetics.
+      </p>
+      <p class="text-gray-700 text-lg leading-relaxed mb-6">
+        Whether I'm writing clean, maintainable code or designing user-centered visuals, my goal is the same: to create
+        purposeful and engaging digital experiences that resonate with people.
+      </p>
+      <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6 text-gray-800">
+        <div>
+          <h3 class="text-xl font-semibold">2+ Years Experience</h3>
+          <p class="text-sm">In creative and technical fields</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold">10+ Projects Completed</h3>
+          <p class="text-sm">Across design and web development</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold">Tangerang, Indonesia</h3>
+          <p class="text-sm">Currently based</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <section id="portfolio" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center mb-12">Portfolio</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 animate-fade-in-up">
+        <div class="bg-white p-6 shadow-2xl rounded-2xl transform hover:scale-105 transition duration-300">
+          <img src="/assets/backgrund-hero.png" class="rounded-xl mb-5 w-full h-auto object-cover" />
+          <h4 class="font-bold text-2xl mb-2">Project 1</h4>
+          <p class="text-base text-gray-700">UI design for mobile app.</p>
+        </div>
+
+        <div class="bg-white p-6 shadow-2xl rounded-2xl transform hover:scale-105 transition duration-300">
+          <img src="/assets/backgrund-hero.png" class="rounded-xl mb-5 w-full h-auto object-cover" />
+          <h4 class="font-bold text-2xl mb-2">Project 2</h4>
+          <p class="text-base text-gray-700">Local business website.</p>
+        </div>
+
+        <div
+          class="bg-white p-6 shadow-2xl rounded-2xl transform hover:scale-105 transition duration-300 md:col-span-2">
+          <img src="/assets/backgrund-hero.png" class="rounded-xl mb-5 w-full h-auto object-cover" />
+          <h4 class="font-bold text-2xl mb-2">Project 3</h4>
+          <p class="text-base text-gray-700">Company profile video.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="contact" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4 max-w-xl animate-fade-in-up">
+      <h2 class="text-3xl font-bold text-center mb-6">Contact Me</h2>
+      <form class="space-y-4" onsubmit="showAlert(event)">
+        <input type="text" placeholder="Your Name" class="w-full p-3 border border-gray-300 rounded-lg" required />
+        <input type="email" placeholder="Your Email" class="w-full p-3 border border-gray-300 rounded-lg" required />
+        <textarea placeholder="Your Message" class="w-full p-3 border border-gray-300 rounded-lg" rows="5"
+          required></textarea>
+        <button class="w-full bg-primary text-white py-3 rounded-lg hover:bg-blue-700 transition">Send
+          Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="bg-white py-6 text-center text-sm border-t">
+    <div class="flex justify-center items-center gap-4 mb-2">
+      <a href="https://www.instagram.com/giigibran/" target="_blank" aria-label="Instagram">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#393e46] hover:text-pink-500 transition"
+          fill="currentColor" viewBox="0 0 24 24">
+          <path
+            d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 2 .3 2.5.5.6.3 1 .6 1.4 1.1.5.5.8.9 1.1 1.5.2.5.4 1.3.5 2.5.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.3 2-.5 2.5-.3.6-.6 1-1.1 1.4-.5.5-.9.8-1.5 1.1-.5.2-1.3.4-2.5.5-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-2-.3-2.5-.5-.6-.3-1-.6-1.4-1.1-.5-.5-.8-.9-1.1-1.5-.2-.5-.4-1.3-.5-2.5C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.3-2 .5-2.5.3-.6.6-1 1.1-1.4.5-.5.9-.8 1.5-1.1.5-.2 1.3-.4 2.5-.5C8.4 2.2 8.8 2.2 12 2.2M12 0C8.7 0 8.3 0 7 0.1 5.6 0.2 4.6 0.5 3.8.8c-.9.4-1.6.9-2.3 1.6C.9 3.1.4 3.8.1 4.6.1 5.4-.1 6.4 0 7.8 0 9.1 0 9.5 0 12s0 2.9.1 4.2c.1 1.4.3 2.4.6 3.2.3.9.8 1.6 1.6 2.3.7.7 1.4 1.2 2.3 1.6.8.3 1.8.5 3.2.6 1.3.1 1.7.1 4.2.1s2.9 0 4.2-.1c1.4-.1 2.4-.3 3.2-.6.9-.3 1.6-.8 2.3-1.6.7-.7 1.2-1.4 1.6-2.3.3-.8.5-1.8.6-3.2.1-1.3.1-1.7.1-4.2s0-2.9-.1-4.2c-.1-1.4-.3-2.4-.6-3.2-.3-.9-.8-1.6-1.6-2.3-.7-.7-1.4-1.2-2.3-1.6-.8-.3-1.8-.5-3.2-.6C14.9 0 14.5 0 12 0zm0 5.8a6.2 6.2 0 1 0 0 12.4 6.2 6.2 0 0 0 0-12.4zm0 10.2a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.4-10.5a1.4 1.4 0 1 1-2.8 0 1.4 1.4 0 0 1 2.8 0z" />
+        </svg>
+      </a>
+      <a href="https://github.com/Kabimbum" target="_blank" aria-label="GitHub">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#393e46] hover:text-gray-800 transition"
+          viewBox="0 0 24 24" fill="currentColor">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M12 0C5.373 0 0 5.372 0 12c0 5.303 3.438 9.799 8.205 11.387.6.111.82-.26.82-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.729.083-.729 1.205.084 1.84 1.237 1.84 1.237 1.07 1.835 2.807 1.304 3.492.997.108-.776.42-1.305.763-1.604-2.665-.305-5.467-1.332-5.467-5.931 0-1.31.469-2.381 1.236-3.221-.124-.304-.536-1.527.117-3.176 0 0 1.008-.322 3.301 1.23a11.5 11.5 0 0 1 3.003-.404c1.02.005 2.047.138 3.003.404 2.291-1.552 3.297-1.23 3.297-1.23.655 1.649.243 2.872.12 3.176.77.84 1.235 1.911 1.235 3.221 0 4.61-2.807 5.624-5.48 5.921.43.371.823 1.102.823 2.222v3.293c0 .319.218.694.825.576C20.565 21.796 24 17.3 24 12c0-6.628-5.373-12-12-12z" />
+        </svg>
+      </a>
+      <span>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#393e46] opacity-50" viewBox="0 0 24 24"
+          fill="currentColor">
+          <path
+            d="M22 12.07C22 6.51 17.52 2 12 2S2 6.51 2 12.07c0 4.99 3.66 9.13 8.44 9.93v-7.03H7.9v-2.9h2.54V9.66c0-2.5 1.5-3.89 3.8-3.89 1.1 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.78-1.63 1.57v1.89h2.78l-.44 2.9h-2.34v7.03C18.34 21.2 22 17.06 22 12.07z" />
+        </svg>
+      </span>
+      <span>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#393e46] opacity-50" fill="currentColor"
+          viewBox="0 0 24 24">
+          <path
+            d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.3 8h4.4v12H.3V8zM8.34 8h4.21v1.64h.06c.59-1.12 2.04-2.3 4.2-2.3 4.5 0 5.33 2.96 5.33 6.8V20H17.7v-5.63c0-1.35-.03-3.1-1.89-3.1-1.89 0-2.18 1.48-2.18 3v5.73H8.34V8z" />
+        </svg>
+      </span>
+    </div>
+    <p>&copy; 2025 Muhammad Gibran Hakim. </p>
+  </footer>
+
+
+
+
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
